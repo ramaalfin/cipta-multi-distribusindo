@@ -31,6 +31,10 @@ body {
 .sticky #navbarCollapse li .ud-menu-scroll.active {
   @apply text-primary opacity-100;
 }
-.navbarTogglerActive > span {
-  background-image: url(../assets/images/xmark-solid.svg);
+.sticky .loginBtn {
+  @apply text-dark hover:text-primary hover:opacity-100;
+}
+
+.sticky .hubungi {
+  @apply bg-primary text-white hover:bg-dark hover:text-white;
 }

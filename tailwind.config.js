@@ -1,5 +1,8 @@
 module.exports = {
-  content: ["./*.html", "./assets/**/*.js"],
+  content: [
+    "./*.html", "./assets/**/*.js",
+    "./node_modules/flowbite/**/*.js",
+  ],
 
   theme: {
     screens: {
@@ -43,5 +46,8 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require("daisyui"),
+    require('flowbite/plugin'),
+  ],
 };
