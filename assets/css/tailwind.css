@@ -2019,6 +2019,7 @@ input:checked + .toggle-bg{
   .container{
     max-width: 720px;
   }
+  
 }
 
 @media (min-width: 960px){
@@ -2234,9 +2235,10 @@ input:checked + .toggle-bg{
 .hero{
   display: grid;
   width: 100%;
-  place-items: center;
+  place-items: start;
   background-size: cover;
   background-position: center;
+  justify-content: center;
 }
 
 .hero > *{
@@ -2251,7 +2253,7 @@ input:checked + .toggle-bg{
   justify-content: center;
   max-width: 80rem;
   gap: 1rem;
-  padding: 1rem;
+  padding: 1rem 1rem 2rem 1rem;
 }
 
 .indicator{
@@ -4393,6 +4395,10 @@ body[dir="rtl"] .checkbox:checked,
   padding: 2rem;
 }
 
+.p-10{
+  padding: 2.5rem;
+}
+
 .p-2\.5{
   padding: 0.625rem;
 }
@@ -4506,12 +4512,32 @@ body[dir="rtl"] .checkbox:checked,
   padding-top: 5rem;
 }
 
+.pt-22{
+  padding-top: 5.5rem;
+}
+
+.pt-12{
+  padding-top: 3rem;
+}
+
+.pt-16{
+  padding-top: 4rem;
+}
+
 .pb-8{
   padding-bottom: 2rem;
 }
 
 .pb-6{
   padding-bottom: 1.5rem;
+}
+
+.pb-5{
+  padding-bottom: 1.25rem;
+}
+
+.pb-4{
+  padding-bottom: 1rem;
 }
 
 .pb-3{
@@ -4526,8 +4552,16 @@ body[dir="rtl"] .checkbox:checked,
   padding-top: 0.25rem;
 }
 
+.pt-8{
+  padding-top: 2rem;
+}
+
 .pb-20{
   padding-bottom: 5rem;
+}
+
+.pb-16{
+  padding-bottom: 4rem;
 }
 
 .pb-12{
@@ -5218,6 +5252,15 @@ body {
 }
 
 @media (min-width: 720px){
+  .md\:hero-content{
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 38rem;
+    gap: 1.3rem;
+    padding: 1.5rem 1.5rem 3rem 1.5rem;
+  }
   .md\:my-3{
     margin-top: 0.75rem;
     margin-bottom: 0.75rem;
@@ -5225,6 +5268,10 @@ body {
 
   .md\:mr-16{
     margin-right: 4rem;
+  }
+
+  .md\:mb-4{
+    margin-bottom: 1rem;
   }
 
   .md\:mb-6{
@@ -5298,6 +5345,11 @@ body {
     padding-right: 1.5rem;
   }
 
+  .md\:px-8{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
   .md\:py-\[120px\]{
     padding-top: 120px;
     padding-bottom: 120px;
@@ -5315,9 +5367,18 @@ body {
     padding-top: 160px;
   }
 
+  .md\:pt-12{
+    padding-top: 3rem;
+  }
+
   .md\:text-xs{
     font-size: 0.75rem;
     line-height: 1rem;
+  }
+
+  .md\:text-sm{
+    font-size: 1rem;
+    line-height: 1.25rem;
   }
 
   .md\:text-3xl{
@@ -5358,9 +5419,26 @@ body {
   .md\:leading-relaxed{
     line-height: 1.625;
   }
+
+  .md\:w-max{
+    width: max-content;
+  }
+
+  .md\:text-hubungi{
+    font-size: .8rem;
+  }
 }
 
 @media (min-width: 960px){
+  .lg\:hero-content {
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 40rem;
+    gap: 1.5rem;
+    padding: 2rem 0rem 3rem 0rem;
+  }
   .lg\:static{
     position: static;
   }
@@ -5377,12 +5455,20 @@ body {
     margin-right: 1.5rem;
   }
 
+  .lg\:mb-2{
+    margin-bottom: 0.5rem;
+  }
+
   .lg\:mb-3{
     margin-bottom: 0.75rem;
   }
 
   .lg\:ml-auto{
     margin-left: auto;
+  }
+
+  .lg\:mb-16{
+    margin-bottom: 4rem;
   }
 
   .lg\:mb-20{
@@ -5468,6 +5554,10 @@ body {
   .lg\:max-w-\[565px\]{
     max-width: 565px;
   }
+  
+  .lg\:max-w-\[95\]{
+    max-width: 95%;
+  }
 
   .lg\:flex-row{
     flex-direction: row;
@@ -5491,6 +5581,11 @@ body {
     padding-right: 1rem;
   }
 
+  .lg\:px-8{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
   .lg\:py-6{
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
@@ -5509,6 +5604,21 @@ body {
   .lg\:px-16{
     padding-left: 4rem;
     padding-right: 4rem;
+  }
+
+  .lg\:px-20{
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  
+  .lg\:px-24{
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  .lg\:px-28{
+    padding-left: 7rem;
+    padding-right: 7rem;
   }
 
   .lg\:py-10{
@@ -5535,20 +5645,20 @@ body {
     padding-right: 0px;
   }
 
-  .lg\:pt-\[190px\]{
-    padding-top: 190px;
+  .lg\:pt-\[250px\]{
+    padding-top: 250px;
   }
 
-  .lg\:pt-\[120px\]{
-    padding-top: 120px;
+  .lg\:pt-\[85px\]{
+    padding-top: 85px;
   }
 
   .lg\:pb-\[70px\]{
     padding-bottom: 70px;
   }
 
-  .lg\:pb-\[120px\]{
-    padding-bottom: 120px;
+  .lg\:pb-\[85px\]{
+    padding-bottom: 85px;
   }
 
   .lg\:pb-\[90px\]{
@@ -5562,6 +5672,11 @@ body {
   .lg\:text-sm{
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+
+  .lg\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 
   .lg\:text-5xl{
@@ -5578,6 +5693,26 @@ body {
     --tw-shadow: 0 0 #0000;
     --tw-shadow-colored: 0 0 #0000;
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .lg\:text-base{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .lg\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .lg\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  
+  .lg\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 
   .group:hover .lg\:group-hover\:text-white{
@@ -5635,6 +5770,27 @@ body {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
+
+  .xl\:pt-\[260px\]{
+    padding-top: 260px;
+  }
+
+  .xl\:text-base{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .xl\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .xl\:text-xl{
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
+  
+  
 }
 
 @media (min-width: 1320px){

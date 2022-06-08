@@ -4,6 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -38,3 +39,4 @@ body {
 .sticky .hubungi {
   @apply bg-primary text-white hover:bg-dark hover:text-white;
 }
+
