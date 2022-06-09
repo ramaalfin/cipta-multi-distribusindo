@@ -23,6 +23,10 @@
   "dependencies": {
     "@jaaahn/hyper-ui": "^2.0.2",
     "daisyui": "^2.15.2",
-    "flowbite": "^1.4.7"
+    "flowbite": "^1.4.7",
+    "jquery": "^3.6.0",
+    "owl.carousel": "^2.3.4",
+    "swiper": "^8.2.2",
+    "tiny-slider": "^2.9.4"
   }
 }

@@ -51,15 +51,26 @@
       })
     );
 
-  // ===== Faq accordion
-  const faqs = document.querySelectorAll(".single-faq");
-  faqs.forEach((el) => {
-    el.querySelector(".faq-btn").addEventListener("click", () => {
-      el.querySelector(".icon").classList.toggle("rotate-180");
-      el.querySelector(".faq-content").classList.toggle("hidden");
-    });
-  });
+  // ===== owl carousel
+  $('.single-item').slick();
 
+  $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:0,
+    nav:false,
+    dots:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:4
+        }
+    }
+  });
   // ===== wow js
   new WOW().init();
 
