@@ -3938,7 +3938,7 @@ body[dir="rtl"] .checkbox:checked,
   min-height: min-content;
 }
 
-.md\:min-h-screen{
+.min-h-screen{
   min-height: 100vh;
 }
 
@@ -4307,7 +4307,7 @@ body[dir="rtl"] .checkbox:checked,
 
 .bg-primary{
   --tw-bg-opacity: 1;
-  background-color: rgb(48 86 211 / var(--tw-bg-opacity));
+  background-color: #3b82f6;
 }
 
 .bg-secondary{
@@ -4881,6 +4881,7 @@ body {
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
+  padding-top: 0.5rem;
 }
 
 .sticky .navbar-logo{
@@ -5256,6 +5257,9 @@ body {
 }
 
 @media (min-width: 720px){
+  .md\:bg-hero{
+    background-image: url(../images/vertical-low-angle-closeup-shot-black-roof-building.jpg);
+  }
   .md\:hero-content{
     z-index: 0;
     display: flex;
