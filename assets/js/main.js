@@ -52,7 +52,9 @@
     );
 
   // ===== owl carousel
-  $('.single-item').slick();
+  $('.single-item').slick({
+    nav: false,
+  });
 
   $('.owl-carousel').owlCarousel({
     loop:true,
