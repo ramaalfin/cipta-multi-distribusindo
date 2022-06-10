@@ -3934,8 +3934,8 @@ body[dir="rtl"] .checkbox:checked,
   height: 1rem;
 }
 
-.min-h-max{
-  min-height: max-content;
+.min-h-min{
+  min-height: min-content;
 }
 
 .md\:min-h-screen{
